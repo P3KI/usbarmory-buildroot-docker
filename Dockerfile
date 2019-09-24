@@ -7,7 +7,7 @@ FROM debian:9
 MAINTAINER Gregor Jehle <hadez@p3ki.com>
 
 # Combined depdencies
-RUN apt-get update && apt-get install -y bc binfmt-support bzip2 fakeroot gcc gcc-arm-linux-gnueabihf git gnupg make parted qemu-user-static wget xz-utils zip debootstrap sudo dirmngr bison flex libssl-dev kmod apt-transport-https ca-certificates curl gnupg2 software-properties-common libusb-dev apt-get install -y udev pkg-config libusb-1.0-0-dev vim
+RUN apt-get update && apt-get install -y bc binfmt-support bzip2 fakeroot gcc gcc-arm-linux-gnueabihf git gnupg make parted qemu-user-static wget xz-utils zip debootstrap sudo dirmngr bison flex libssl-dev kmod apt-transport-https ca-certificates curl gnupg2 software-properties-common libusb-dev udev pkg-config libusb-1.0-0-dev vim
 
 # Docker-ception
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
